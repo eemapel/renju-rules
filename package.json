@@ -1,0 +1,25 @@
+{
+  "name": "renju-rules",
+  "version": "0.0.1",
+  "description": "Renju rules validator",
+  "main": "rules.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eemapel/renju-rules.git"
+  },
+  "keywords": [
+    "renju"
+  ],
+  "author": "Marko Pellikka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eemapel/renju-rules/issues"
+  },
+  "homepage": "https://github.com/eemapel/renju-rules"
+}
