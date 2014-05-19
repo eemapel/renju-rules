@@ -6,6 +6,7 @@
  */
 
 var fs = require("fs")
+var common = require('./common');
 
 // Global array for board
 var board = new Array();
@@ -76,5 +77,6 @@ function storeData(data) {
             }
         }
     }
-    beautify();
 }
+
+common.dim();
