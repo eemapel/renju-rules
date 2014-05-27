@@ -1,17 +1,14 @@
 {
   "name": "renju-rules",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Renju rules validator",
   "main": "rules.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/eemapel/renju-rules.git"
+  },
+  "devDependencies": {
+    "colors": "*"
   },
   "keywords": [
     "renju"
