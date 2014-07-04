@@ -10,17 +10,9 @@
 var gameData = require('./lib/gamedata')
 var fileTools = require('./lib/filetools')
 
-// Global constants
-var C = require('./lib/constants')
-
 // If no arguments given, exit
 if (process.argv.length < 3)
 {
-/// TEST
-    var res = String.fromCharCode(9679)
-    console.log(res.green)
-/// TEST
-
     console.log("Not enough arguments, exiting!")
     process.exit(1)
 }
@@ -28,9 +20,10 @@ if (process.argv.length < 3)
 fileName = process.argv[2]
 
 var ft = new fileTools()
-console.log(ft.readFile(fileName))
 
 var match = new gameData()
-match.nextMove()
+match.setBoard(ft.readFile(fileName))
+
 console.log(match.showMoveCount())
-console.log(C.WHITE)
+ft.show(match.getBoard())
+
