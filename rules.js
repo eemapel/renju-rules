@@ -5,8 +5,6 @@
  * valid according to the rules.
  */
 
-/*jshint asi: true*/
-
 var gameData = require('./lib/gamedata')
 var fileTools = require('./lib/filetools')
 
@@ -24,6 +22,6 @@ var ft = new fileTools()
 var match = new gameData()
 match.setBoard(ft.readFile(fileName))
 
-console.log(match.showMoveCount())
+console.log("Move Count: " + match.showMoveCount())
 ft.show(match.getBoard())
 
