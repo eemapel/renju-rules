@@ -1,4 +1,7 @@
 {
     // ignore semicolons
-    "asi": true
+    "asi": true,
+
+    // allow switch-case fall-through
+    "-W086": true
 }

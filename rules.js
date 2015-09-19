@@ -26,10 +26,5 @@ match.setBoard(ft.readFile(fileName))
 
 console.log("Move Count: " + match.showMoveCount())
 visualizer(match.getBoard())
-
-var flipped = symmetry.xyReverse(match.getBoard())
-visualizer(flipped)
-
-var flipped2 = symmetry.xFlip(flipped)
-console.log(flipped2)
-//visualizer(flipped)
+//visualizer(symmetry.rotator(match.getBoard(), 0))
+visualizer(symmetry.rotator(match.getBoard(), 1))
