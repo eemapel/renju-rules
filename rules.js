@@ -7,6 +7,8 @@
 
 var gameData = require('./lib/gamedata')
 var fileTools = require('./lib/filetools')
+var symmetry = require('./lib/symmetry')
+var visualizer = require('./lib/visualizer')
 
 // If no arguments given, exit
 if (process.argv.length < 3)
@@ -23,5 +25,11 @@ var match = new gameData()
 match.setBoard(ft.readFile(fileName))
 
 console.log("Move Count: " + match.showMoveCount())
-ft.show(match.getBoard())
+visualizer(match.getBoard())
 
+var flipped = symmetry.xyReverse(match.getBoard())
+visualizer(flipped)
+
+var flipped2 = symmetry.xFlip(flipped)
+console.log(flipped2)
+//visualizer(flipped)
