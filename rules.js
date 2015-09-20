@@ -24,7 +24,9 @@ var ft = new fileTools()
 var match = new gameData()
 match.setBoard(ft.readFile(fileName))
 
-console.log("Move Count: " + match.showMoveCount())
+// Some test functionality
+console.log("Move Count         : " + match.showMoveCount())
+console.log("Symmetry signature : " + symmetry.signature(match.getBoard()))
 visualizer(match.getBoard())
 //visualizer(symmetry.rotator(match.getBoard(), 0))
 visualizer(symmetry.rotator(match.getBoard(), 1))
